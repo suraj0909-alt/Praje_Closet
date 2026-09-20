@@ -1,0 +1,72 @@
+.collection-page {
+  padding-top: 132px;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: var(--charcoal-soft);
+  margin-bottom: 20px;
+}
+
+.breadcrumb a:hover {
+  color: var(--charcoal);
+}
+
+.collection-head {
+  margin-bottom: 36px;
+  max-width: 60ch;
+}
+
+.collection-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-pill {
+  border: 1px solid var(--line);
+  background: transparent;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--charcoal-soft);
+  transition: all 0.25s var(--ease);
+}
+
+.filter-pill:hover {
+  border-color: var(--charcoal);
+  color: var(--charcoal);
+}
+
+.filter-pill.active {
+  background: var(--charcoal);
+  color: var(--ivory);
+  border-color: var(--charcoal);
+}
+
+.sort-select {
+  border: 1px solid var(--line);
+  background: var(--white);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--charcoal);
+}
+
+.result-count {
+  font-size: 13px;
+  color: var(--charcoal-soft);
+  margin: 20px 0 28px;
+}
