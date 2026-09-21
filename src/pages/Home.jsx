@@ -7,9 +7,11 @@ import ProductGrid from "../components/ProductGrid.jsx";
 import Newsletter from "../components/Newsletter.jsx";
 import { categories, products } from "../data/products.js";
 import "./Home.css";
+import image1 from "../assets/images/image1.jpg"
+import images from "../assets/images/homepage-img.jpg"
 
-const heroImg = "https://picsum.photos/seed/lunea-hero-main/1600/1900";
-const trendImg = "https://picsum.photos/seed/lunea-trend/1600/900";
+// const heroImg = "https://www.magnific.com/free-photo/woman-with-shopping-bags-coffee-smiling-camera_5714397.htm#fromView=detail&position=4";
+//const trendImg = "https://www.magnific.com/free-photo/top-view-sewing-essentials-with-measuring-tape-scissors_9361865.htm#fromView=keyword&page=1&position=8&uuid=7b43130e-f3de-472d-8522-ceeb17f18baf&track=ais_hybrid&query=Tailor+background";
 const instaSeeds = [
   "lunea-insta-1",
   "lunea-insta-2",
@@ -27,7 +29,7 @@ export default function Home() {
     <main className="page home-page">
       {/* HERO */}
       <section className="hero">
-        <img src={heroImg} alt="Woman wearing a modern PRAJE outfit" className="hero-img" />
+        <img src={images} alt="Woman wearing a modern PRAJE outfit" className="hero-img" />
         <div className="hero-scrim" />
         <div className="hero-content container fade-in">
           <span className="hero-eyebrow">PRAJE CLOSET</span>
@@ -85,7 +87,7 @@ export default function Home() {
 
       {/* TRENDING EDITORIAL */}
       <section className="trend-section">
-        <img src={trendImg} alt="LUNÉA trend edit" />
+        <img src={image1} alt="PRAJE trend edit" />
         <div className="trend-overlay">
           <div className="container">
             <p className="trend-eyebrow">The Edit</p>
@@ -119,7 +121,7 @@ export default function Home() {
               style={{ animationDelay: `${i * 0.06}s` }}
               onClick={(e) => e.preventDefault()}
             >
-              <img src={`https://picsum.photos/seed/${seed}/600/600`} alt="Customer styled LUNÉA look" loading="lazy" />
+              <img src={`https://picsum.photos/seed/${seed}/600/600`} alt="Customer styled PRAJE look" loading="lazy" />
             </a>
           ))}
         </div>
